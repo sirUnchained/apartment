@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.682.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0",
+    "graphql-http": "^1.22.1",
+    "helmet": "^8.0.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer-s3": "^3.0.1",
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.7",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2",
+    "svg-captcha": "^1.4.0",
+    "yup": "^1.4.0"
+  },
+  "name": "apartment",
+  "version": "1.0.0",
+  "description": "i'll create a buying and selling houses backend.",
+  "main": "./src/server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "nodemon",
+    "db": "sequelize-cli db:create --config ./src/configSequelize.js",
+    "migrate": "sequelize-cli db:migrate --config ./src/configSequelize.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirUnchained/apartment.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "github, telegram => @sirUnchained",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirUnchained/apartment/issues"
+  },
+  "homepage": "https://github.com/sirUnchained/apartment#readme"
+}
